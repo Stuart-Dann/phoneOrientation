@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <title>lol</title>
-<link id="javaScript" rel="stylesheet" href="orientation.js" type="text/Javascript">
-<script id="script" src="orientation.js"></script>
 
 
 <p id="alpha">Alpha</p>
 <p id="beta">Beta</p>
 <p id="gamma">Gamma</p>
 
+<script>
+    function updateOrientation(e) {
+	a = document.querySelector('#alpha')
+	b = document.querySelector('#beta')
+	g = document.querySelector('#gamma')
+	a.innerHTML = e.alpha
+	b.innerHTML = e.beta
+	g.innerHTML = e.gamma
+}
+
+window.addEventListener('deviceorientation', updateOrientation)
+
+</script>
