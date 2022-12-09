@@ -6,5 +6,4 @@ function updateOrientation(e) {
 	b.innerHTML = e.beta
 	g.value = e.gamma
 }
-
-window.onload(() => window.addEventListener('deviceorientation', updateOrientation))
+window.addEventListener('deviceorientation', updateOrientation)
