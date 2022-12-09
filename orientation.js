@@ -7,4 +7,4 @@ function updateOrientation(e) {
 	g.textcontent = e.gamma
 }
 
-document.body.addEventListener('deviceorientation', updateOrientation)
+window.addEventListener('deviceorientation', updateOrientation)
